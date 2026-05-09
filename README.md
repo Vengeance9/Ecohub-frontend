@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EcoHub-Frontend
 
-## Getting Started
+## Project Description
+EcoHub is a community portal frontend application that enables members to share sustainability ideas, vote on solutions, and collaborate on environmental projects. Built with Next.js and Tailwind CSS, it provides a seamless experience for both regular users and admins.
 
-First, run the development server:
+## Live URLs
+- Backend API: `https://ecohub-backend-jkya.onrender.com`
+- Frontend: `https://ecohub-frontend.vercel.app/`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Public Pages
+- Home page with hero banner, featured ideas, and newsletter
+- All Ideas page with search, filters, and pagination
+- Idea Details page with voting system
+- About Us page
+- Blog page
+- Login & Registration pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Member Features (Logged In)
+- Create, edit, and delete sustainability ideas
+- Submit ideas for admin review
+- Upvote/downvote on ideas (Reddit-like system)
+- Purchase access to paid ideas
+- Comment on ideas with nested replies (optional)
+- Member dashboard with personal stats
+- My Ideas section with status filtering
+- Profile page
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Admin Features
+- Admin dashboard with:
+  - View all ideas by status (Under Review, Approved, Rejected)
+  - Approve/Reject ideas with feedback
+  - View all users
+  - Activate/Deactivate users
+  - Edit user roles (Member/Admin)
 
-## Learn More
+### Core Functionality
+- Search ideas by keyword, title, or description
+- Filter by category (Energy, Waste, Transportation)
+- Filter by payment status (Free/Paid)
+- Filter by vote range
+- Sort by Recent or Top Voted
+- Pagination (10-12 ideas per page)
+- Responsive design (Mobile, Tablet, Desktop)
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Technology | Purpose |
+|------------|---------|
+| Next.js | React framework with SSR |
+| TypeScript | Type safety |
+| Tailwind CSS | Styling |
+| React Query | Server state management |
+| Axios | API calls |
+| JWT | Authentication |
+| React Hook Form | Form handling |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

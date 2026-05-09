@@ -6,8 +6,8 @@ export const catchAsyncFrontend = (fn: (...args: any[]) => Promise<any>) => {
       console.log(error);
       throw new Error(
         error.response?.data?.error ||
-          error.response?.data?.message ||
-          "Something went wrong"
+        error.response?.data?.message ||
+        "Something went wrong"
       );
     }
   };
